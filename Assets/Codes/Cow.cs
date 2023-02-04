@@ -9,18 +9,22 @@ public class Cow : MonoBehaviour
     public GameObject etpisir;
     public GameObject dabancadevredisi;
     public GameObject diyalog2;
+    public Gorev grs;
+    
     public void TakeDamage(float damage)
     {
         health -= damage;
         if (health <= 0)
         {
             anim.SetBool("Die", true);
+            dabancadevredisi.SetActive(false);
         }
     }
     public void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.tag == "Ocak")
         {
+            grs.gorevsayaci = 2;
             StartCoroutine(inekpisir());
         }
     }
@@ -29,7 +33,7 @@ public class Cow : MonoBehaviour
         diyalog2.SetActive(true);
         yield return new WaitForSeconds(3f);
         etpisir.SetActive(true);
-        dabancadevredisi.SetActive(false);
+        
         diyalog2.SetActive(false);
         Destroy(gameObject);
         

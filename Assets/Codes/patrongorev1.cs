@@ -8,6 +8,7 @@ public class patrongorev1 : MonoBehaviour
     public GameObject dabanca;
     public GameObject diyalog1;
     public bool diyalogbasladi = false;
+    public Gorev gs;
     void Start()
     {
         
@@ -20,10 +21,10 @@ public class patrongorev1 : MonoBehaviour
     }
     public void OnMouseOver()
     {
-        if (Input.GetMouseButton(0)&& diyalogbasladi == false)
+        if (Input.GetMouseButton(0)&& diyalogbasladi == false && gs.gorevsayaci == 0)
         {
             diyalogbasladi=true;
-            
+            gs.gorevsayaci = 1;
             StartCoroutine(firstdialog());
         }
     }

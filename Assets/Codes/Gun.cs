@@ -7,6 +7,7 @@ public class Gun : MonoBehaviour
     public Camera cam;
 	public Animator anim;
 	public Cow cowSc;
+    public Boss boss;
     public float damage = 1f;
 
     void Update()
@@ -21,7 +22,11 @@ public class Gun : MonoBehaviour
 				{
 					cowSc.TakeDamage(damage);
 				}
-			}
+                if (hit.transform.name == "Boss")
+                {
+                    boss.TakeDamage(damage);
+                }
+            }
 		}
     }
 }
