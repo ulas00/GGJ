@@ -17,10 +17,10 @@ public class FamilyTree : MonoBehaviour
         {
             firstq.onClick.AddListener(() => firstqueststarter());
         }
-        //if (questcounter == 1)
-        //{
-        //    secondq.onClick.AddListener(() => secondqueststarter());
-        //}
+        if (questcounter == 1)
+        {
+            secondq.onClick.AddListener(() => secondqueststarter());
+        }
         //if (questcounter == 2)
         //{
         //    third.onClick.AddListener(() => thirdqueststarter());
@@ -38,10 +38,10 @@ public class FamilyTree : MonoBehaviour
         SceneManager.LoadScene(2, LoadSceneMode.Additive);
         ft.SetActive(false);
     }
-    //public void secondqueststarter()
-    //{
-    //SceneManager.LoadScene("S2", LoadSceneMode.Additive);
-    //}
+    public void secondqueststarter()
+    {
+        SceneManager.LoadScene("S2", LoadSceneMode.Additive);
+    }
     //public void thirdqueststarter()
     //{
     //SceneManager.LoadScene("S3", LoadSceneMode.Additive);
