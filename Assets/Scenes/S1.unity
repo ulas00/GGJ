@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028331, g: 0.2257133, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1933,6 +1933,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bosshp: 4
   kutlama: {fileID: 1632288306}
+  anim: {fileID: 0}
 --- !u!114 &1859253419
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2877,6 +2878,7 @@ GameObject:
   - component: {fileID: 1859253415}
   - component: {fileID: 1859253418}
   - component: {fileID: 1859253419}
+  - component: {fileID: 919132147843363643}
   m_Layer: 0
   m_Name: Boss
   m_TagString: Boss
@@ -2884,6 +2886,26 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &919132147843363643
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132147843363642}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ea23fa862079f5d4dbe8714398c03dc2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!33 &996076908338955690
 MeshFilter:
   m_ObjectHideFlags: 0

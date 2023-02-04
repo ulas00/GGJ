@@ -7,6 +7,7 @@ public class Boss : MonoBehaviour
     
     public float bosshp = 4f;
     public GameObject kutlama;
+    public Animator anim;
     void Start()
     {
         
@@ -16,7 +17,7 @@ public class Boss : MonoBehaviour
         bosshp -= damage;
         if (bosshp <= 0)
         {
-            
+            anim.SetBool("Die", true);
             kutlama.SetActive(true);
             StartCoroutine(ilkstagebitti());
             
