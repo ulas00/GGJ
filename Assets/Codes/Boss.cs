@@ -16,9 +16,10 @@ public class Boss : MonoBehaviour
         bosshp -= damage;
         if (bosshp <= 0)
         {
+            
             kutlama.SetActive(true);
             StartCoroutine(ilkstagebitti());
-            Destroy(gameObject);
+            
             
         }
     }
@@ -29,9 +30,10 @@ public class Boss : MonoBehaviour
     }
     IEnumerator ilkstagebitti()
     {
-        
+        Cursor.lockState = CursorLockMode.None;
         yield return new WaitForSeconds(6f);
-        SceneManager.LoadScene("SoyAgaci");    
+        SceneManager.LoadScene("SoyAgaci");
+        
     }
 
 
