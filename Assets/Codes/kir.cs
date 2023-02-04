@@ -27,16 +27,4 @@ public class kir : MonoBehaviour
         }
 
     }
-    public void OnTriggerEnter(Collider other)
-    {
-        if(other.gameObject.tag == "firca")
-        {
-            Debug.Log("fircalaniyo");
-            fircalaniyor = true;
-        }
-        else
-        {
-            fircalaniyor = false;
-        }
-    }
 }
