@@ -122,11 +122,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-<<<<<<< Updated upstream
   m_NavMeshData: {fileID: 23800000, guid: 8412e539972ba8444834cd67a241625e, type: 2}
-=======
-  m_NavMeshData: {fileID: 23800000, guid: 6d81fe3a14d0f584988d8943ab25f459, type: 2}
->>>>>>> Stashed changes
 --- !u!1 &12653130
 GameObject:
   m_ObjectHideFlags: 0
@@ -3245,7 +3241,7 @@ GameObject:
   - component: {fileID: 924092919}
   m_Layer: 0
   m_Name: SpawnTrigger
-  m_TagString: kaplanspawn
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3258,7 +3254,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 924092918}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 31.425797, y: 6.365604, z: 11.299644}
@@ -7421,7 +7417,6 @@ Transform:
   - {fileID: 756817674}
   m_Father: {fileID: 0}
   m_RootOrder: 3
-<<<<<<< Updated upstream
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2083800532
 GameObject:
@@ -7454,8 +7449,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1130649423}
   m_RootOrder: 0
-=======
->>>>>>> Stashed changes
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2083800534
 MonoBehaviour:

@@ -11,11 +11,7 @@ TagManager:
   - musterimama
   - et
   - Boss
-<<<<<<< Updated upstream
   - Tiger
-=======
-  - kaplanspawn
->>>>>>> Stashed changes
   layers:
   - Default
   - TransparentFX
