@@ -6,8 +6,12 @@ public class kir : MonoBehaviour
 {
     public bool fircalaniyor;
     public float fircalanmazamani = 3.0f;
+    public int fircasayisi = 0;
+    
+
     void Start()
     {
+        
         
     }
 
@@ -20,10 +24,16 @@ public class kir : MonoBehaviour
             if(fircalanmazamani < 0)
             {
                 fircalanmazamani = 0;
+                fircasayisi++;
                 Destroy(gameObject);
             }
 
 
+        }
+        if(fircasayisi >= 4)
+        {
+            //18 saat sonra texti girecek
+            Destroy(GameObject.FindGameObjectWithTag("kir"));
         }
 
     }
