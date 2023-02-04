@@ -36,7 +36,9 @@ public class FamilyTree : MonoBehaviour
     public void firstqueststarter()
     {
         SceneManager.LoadScene(2, LoadSceneMode.Additive);
+        questcounter = 1;
         ft.SetActive(false);
+
     }
     public void secondqueststarter()
     {
