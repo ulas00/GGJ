@@ -6,16 +6,10 @@ public class kir : MonoBehaviour
 {
     public bool fircalaniyor;
     public float fircalanmazamani = 3.0f;
-    public int fircasayisi = 0;
-    
+    public kirbabü kirBabü;
 
-    void Start()
-    {
-        
-        
-    }
 
-    // Update is called once per frame
+
     void Update()
     {
         if(fircalaniyor == true)
@@ -24,17 +18,9 @@ public class kir : MonoBehaviour
             if(fircalanmazamani < 0)
             {
                 fircalanmazamani = 0;
-                fircasayisi++;
+                kirBabü.kirsayac++;
                 Destroy(gameObject);
             }
-
-
         }
-        if(fircasayisi >= 4)
-        {
-            //18 saat sonra texti girecek
-            Destroy(GameObject.FindGameObjectWithTag("kir"));
-        }
-
     }
 }
