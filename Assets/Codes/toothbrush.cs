@@ -7,6 +7,7 @@ public class toothbrush : MonoBehaviour
     public GameObject nokta1;
     public GameObject nokta2;
     public float fircalamahiz = 4.0f;
+    
     void Start()
     {
         
@@ -19,5 +20,8 @@ public class toothbrush : MonoBehaviour
         {
             transform.position = Vector3.Lerp(nokta1.transform.position, nokta2.transform.position, Mathf.PingPong(Time.time * fircalamahiz, 1.0f));
         }
+        
+
     }
+    
 }
