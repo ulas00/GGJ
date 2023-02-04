@@ -8,6 +8,7 @@ public class Gun : MonoBehaviour
 	public Animator anim;
 	public Cow cowSc;
     public Boss boss;
+	public AudioSource dýkþýn;
     public float damage = 1f;
 
     void Update()
@@ -18,6 +19,7 @@ public class Gun : MonoBehaviour
 			RaycastHit hit;
 			if (Physics.Raycast(cam.transform.position, cam.transform.forward, out hit, 50f))
 			{
+				dýkþýn.Play();
 				if (hit.transform.name == "Cow")
 				{
 					cowSc.TakeDamage(damage);

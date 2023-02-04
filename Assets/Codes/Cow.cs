@@ -10,12 +10,14 @@ public class Cow : MonoBehaviour
     public GameObject dabancadevredisi;
     public GameObject diyalog2;
     public Gorev grs;
+    public AudioSource ölmek;
     
     public void TakeDamage(float damage)
     {
         health -= damage;
         if (health <= 0)
         {
+            ölmek.Play();
             anim.SetBool("Die", true);
             dabancadevredisi.SetActive(false);
         }
