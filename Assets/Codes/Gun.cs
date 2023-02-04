@@ -26,7 +26,13 @@ public class Gun : MonoBehaviour
                 {
                     boss.TakeDamage(damage);
                 }
-            }
+				if (hit.transform.tag == "Tiger")
+				{
+					Tiger tiger = hit.transform.GetComponent<Tiger>();
+					tiger.TakeDamage(damage);
+				}
+
+			}
 		}
     }
 }
