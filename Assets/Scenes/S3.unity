@@ -9155,6 +9155,7 @@ MonoBehaviour:
   audio2: {fileID: 680846791}
   audio3: {fileID: 466510814}
   audio4: {fileID: 537802004}
+  kirsay: {fileID: 523560630}
 --- !u!1 &1635118948
 GameObject:
   m_ObjectHideFlags: 0

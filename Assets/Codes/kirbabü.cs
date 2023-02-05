@@ -15,11 +15,16 @@ public class kirbabü : MonoBehaviour
 		if (kirsayac == 4)
 		{
 			storyText.text = "18 SAAT SONRA";
-            gameobject.SetActive(true);
-			audio7.Play();
-            esbo.gorev1yapildi = true;
-			esbo.esbergorev2.SetActive(true);
-            Destroy(gameObject);
+			StartCoroutine(sya());
 		}
+	}
+
+	IEnumerator sya()
+	{
+		yield return new WaitForSeconds(2.0f);
+		audio7.Play();
+		esbo.gorev1yapildi = true;
+		esbo.esbergorev2.SetActive(true);
+		Destroy(gameObject);
 	}
 }

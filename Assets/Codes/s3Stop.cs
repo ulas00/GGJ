@@ -12,6 +12,7 @@ public class s3Stop : MonoBehaviour
     public GameObject audio2;
     public AudioSource audio3;
     public AudioSource audio4;
+    public kirbabü kirsay;
 
     #region StoryTexts
 
@@ -53,6 +54,19 @@ public class s3Stop : MonoBehaviour
             gameobject.SetActive(false);
             Time.timeScale = 1f;
         }
+
+        if (kirsay.kirsayac >= 4)
+        {
+            
+            gameobject.SetActive(true);
+            StartCoroutine(skm());
+        }
         
     }
+    IEnumerator skm()
+    {
+        yield return new WaitForSeconds(2.0f);
+		kirsay.kirsayac--;
+		gameobject.SetActive(false);
+	}
 }
