@@ -12,6 +12,7 @@ public class tigerecunte : MonoBehaviour
     private string text1 = "Moray Bey aslanları püskürtmüştür. Ancak sevgili evladının ihanetini kaldıramadığı için vefat etmiştir.";
     void Start()
     {
+        gameobject.SetActive(false);
         tigereCount = 0;
     }
     private void Update()

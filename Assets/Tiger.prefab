@@ -746,6 +746,7 @@ GameObject:
   - component: {fileID: 3004147711123946051}
   - component: {fileID: 3004147711123946049}
   - component: {fileID: 3004147711123946050}
+  - component: {fileID: 8109646614021304353}
   m_Layer: 0
   m_Name: Tiger
   m_TagString: Tiger
@@ -838,9 +839,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c947c300377e724bb3f11d7e5a72dd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerTarget: {fileID: 0}
   anim: {fileID: 3004147711123946049}
   health: 3
+--- !u!114 &8109646614021304353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3004147711123946053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d1191b4c70b06a4ca9cba9483d7fda6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3774976380485310501
 GameObject:
   m_ObjectHideFlags: 0
