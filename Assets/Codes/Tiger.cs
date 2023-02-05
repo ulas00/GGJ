@@ -9,10 +9,12 @@ public class Tiger : MonoBehaviour
     Transform playerTarget;
     public Animator anim;
     public float health = 3f;
+    private tigerecunte count;
     void Start()
     {
         playerTarget = GameObject.FindGameObjectWithTag("player").transform;
         enemy = GetComponent<NavMeshAgent>();
+        count = GetComponent<tigerecunte>();
     }
 
     void Update()
@@ -29,6 +31,7 @@ public class Tiger : MonoBehaviour
 		{
 			enemy.enabled = false;
 			anim.SetBool("Die", true);
+            count.tigereCount++;
 		}
 	}
 }
