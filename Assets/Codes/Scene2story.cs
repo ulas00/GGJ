@@ -10,7 +10,7 @@ public class Scene2story : MonoBehaviour
     public TMP_Text storyText;
     public TMP_Text devamText;
     public AudioSource audio2;
-
+    public int infosayac = 0;
 
 
     #region StoryTexts
@@ -28,17 +28,24 @@ public class Scene2story : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse0)) //cikis icin 
+        if (Input.GetKeyDown(KeyCode.Mouse0)&& infosayac == 0) //cikis icin 
         {
             storyText.text = text2;
             devamText.text = text3;
             audio2.Play();
+            StartCoroutine(devamtextgecis());
 
-            if (Input.GetKeyDown(KeyCode.E))
-            {
-                Time.timeScale = 1;
-                gameobject.SetActive(false);
-            }
         }
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            Time.timeScale = 1;
+            gameobject.SetActive(false);
+        }
+    }
+    IEnumerator devamtextgecis()
+    {
+
+        yield return new WaitForSeconds(0.5f);
+        infosayac = 1;
     }
 }

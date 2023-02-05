@@ -4753,7 +4753,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1078691293
 Transform:
   m_ObjectHideFlags: 0
@@ -4817,7 +4817,7 @@ MonoBehaviour:
   cowSc: {fileID: 0}
   boss: {fileID: 0}
   esbo: {fileID: 0}
-  "d\xFDk\xFE\xFDn": {fileID: 1357149889}
+  "d\u0131k\u015F\u0131n": {fileID: 1357149889}
   damage: 1
 --- !u!1 &1083332337
 GameObject:
@@ -9563,6 +9563,7 @@ MonoBehaviour:
   storyText: {fileID: 1732193172}
   devamText: {fileID: 890031971}
   audio2: {fileID: 1095968062}
+  infosayac: 0
 --- !u!1 &2108435544
 GameObject:
   m_ObjectHideFlags: 0

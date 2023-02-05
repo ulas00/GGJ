@@ -10,21 +10,18 @@ public class FamilyTree : MonoBehaviour
     public Button firstq;
     public Button secondq;
     public Button thirdq;
+    public Button fourthq;
     public GameObject ft;
     void Start()
     {
-        if (questcounter == 0)
-        {
-            firstq.onClick.AddListener(() => firstqueststarter());
-        }
-        if (questcounter == 1)
-        {
-            secondq.onClick.AddListener(() => secondqueststarter());
-        }
-        //if (questcounter == 2)
-        //{
-        //    third.onClick.AddListener(() => thirdqueststarter());
-        //}
+        firstq.onClick.AddListener(() => firstqueststarter());
+
+        secondq.onClick.AddListener(() => secondqueststarter());
+
+        thirdq.onClick.AddListener(() => thirdqueststarter());
+
+        fourthq.onClick.AddListener(() => fourthqueststarter());
+
 
     }
 
@@ -35,17 +32,21 @@ public class FamilyTree : MonoBehaviour
     }
     public void firstqueststarter()
     {
-        SceneManager.LoadScene(2, LoadSceneMode.Additive);
+        SceneManager.LoadScene(2, LoadSceneMode.Single);
         questcounter = 1;
         ft.SetActive(false);
 
     }
     public void secondqueststarter()
     {
-        SceneManager.LoadScene("S2", LoadSceneMode.Additive);
+        SceneManager.LoadScene("S2", LoadSceneMode.Single);
     }
-    //public void thirdqueststarter()
-    //{
-    //SceneManager.LoadScene("S3", LoadSceneMode.Additive);
-    //}
+    public void thirdqueststarter()
+    {
+        SceneManager.LoadScene("S3", LoadSceneMode.Single);
+    }
+    public void fourthqueststarter()
+    {
+        SceneManager.LoadScene("S4", LoadSceneMode.Single);
+    }
 }

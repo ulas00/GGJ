@@ -15,7 +15,7 @@ public class tigerecunte : MonoBehaviour
         gameobject.SetActive(false);
         tigereCount = 0;
     }
-    private void Update()
+    public void Update()
     {
         if(tigereCount == 5)
         {

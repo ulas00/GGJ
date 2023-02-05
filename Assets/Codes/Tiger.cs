@@ -9,7 +9,7 @@ public class Tiger : MonoBehaviour
     Transform playerTarget;
     public Animator anim;
     public float health = 3f;
-    private tigerecunte count;
+    public tigerecunte count;
     void Start()
     {
         playerTarget = GameObject.FindGameObjectWithTag("player").transform;

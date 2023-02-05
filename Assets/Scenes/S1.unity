@@ -142,7 +142,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parasayaci: {fileID: 373398226}
   finalgorev: {fileID: 1764593097}
-  dabancaktif: {fileID: 0}
+  dabancaktif: {fileID: 847341811}
   grvsc: {fileID: 1264630622}
 --- !u!64 &75272604
 MeshCollider:
@@ -1413,6 +1413,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Revolver_LP
       objectReference: {fileID: 0}
+    - target: {fileID: 971374633108695989, guid: 9eb7a6b9bc98e5548bbbe7e35cb0720d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 971374633108695990, guid: 9eb7a6b9bc98e5548bbbe7e35cb0720d, type: 3}
       propertyPath: cam
       value: 
@@ -2469,7 +2473,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e4086407aa61174e97465a31cb89b48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dabanca: {fileID: 0}
+  dabanca: {fileID: 847341811}
   diyalog1: {fileID: 394750957}
   diyalogbasladi: 0
   gs: {fileID: 1264630622}
@@ -2583,6 +2587,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 2b425ff4cee117a4bbe66713b5d867fe, type: 3}
       propertyPath: m_Name
       value: para
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2b425ff4cee117a4bbe66713b5d867fe, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b425ff4cee117a4bbe66713b5d867fe, type: 3}
