@@ -20,7 +20,7 @@ public class tigerecunte : MonoBehaviour
     {
         if(tigereCount >= 5)
         {
-            Time.timeScale = 0;
+            
             gameobject.SetActive(true);
             storyText.text = text1;
             audio1.Play();
@@ -33,6 +33,7 @@ public class tigerecunte : MonoBehaviour
     {
         yield return new WaitForSeconds(3.0f);
         SceneManager.LoadScene("SoyAgaci");
+        Cursor.lockState = CursorLockMode.None;
     }
 }
 
