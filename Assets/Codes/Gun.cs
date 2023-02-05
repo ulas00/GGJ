@@ -8,6 +8,7 @@ public class Gun : MonoBehaviour
 	public Animator anim;
 	public Cow cowSc;
     public Boss boss;
+	public esberfinali esbo;
 	public AudioSource dýkþýn;
     public float damage = 1f;
 
@@ -28,7 +29,11 @@ public class Gun : MonoBehaviour
                 {
                     boss.TakeDamage(damage);
                 }
-				if (hit.transform.tag == "Tiger")
+                if (hit.transform.name == "esber")
+                {
+                    esbo.TakeDamage(damage);
+                }
+                if (hit.transform.tag == "Tiger")
 				{
 					Tiger tiger = hit.transform.GetComponent<Tiger>();
 					tiger.TakeDamage(damage);
