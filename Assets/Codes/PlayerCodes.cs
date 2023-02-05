@@ -1,8 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Threading.Tasks;
-using Unity.VisualScripting;
-using UnityEditor.TextCore.Text;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
