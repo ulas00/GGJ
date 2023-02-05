@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class tigerecunte : MonoBehaviour
 {
@@ -17,18 +18,21 @@ public class tigerecunte : MonoBehaviour
     }
     public void Update()
     {
-        if(tigereCount == 5)
+        if(tigereCount >= 5)
         {
             Time.timeScale = 0;
-            gameObject.SetActive(true);
+            gameobject.SetActive(true);
             storyText.text = text1;
             audio1.Play();
+			StartCoroutine(syac());
         }
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            Time.timeScale = 1;
-            gameobject.SetActive(false);
-        }
+        
+    }
+
+    IEnumerator syac()
+    {
+        yield return new WaitForSeconds(3.0f);
+        SceneManager.LoadScene("SoyAgaci");
     }
 }
 

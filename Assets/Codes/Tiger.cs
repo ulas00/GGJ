@@ -14,7 +14,6 @@ public class Tiger : MonoBehaviour
     {
         playerTarget = GameObject.FindGameObjectWithTag("player").transform;
         enemy = GetComponent<NavMeshAgent>();
-        count = GetComponent<tigerecunte>();
     }
 
     void Update()
